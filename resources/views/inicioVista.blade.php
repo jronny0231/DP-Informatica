@@ -13,7 +13,7 @@
   <body>
 
     <div class="container">
-    <h1>Ejemplo \ <span class="badge bg-secondary">Inicio</span></h1>
+    <h1>Captura \ <span class="badge bg-secondary">{{ $nombre }}</span></h1>
         <div class="card" style="width: 18rem;">
             <img src="https://www.etondigital.com/wp-content/uploads/2019/05/laravel-blog.png" class="card-img-top" alt="Laravel">
             <div class="card-body">

@@ -6,8 +6,10 @@ use Illuminate\Http\Request;
 
 class InicioController extends Controller
 {
-    public function index(){
-        return view('inicioVista');
+    public function index(Request $peticion){
+        $data = ['nombre' => $peticion->query('nombre','NN')];
+
+        return view('inicioVista')->with($data);
     }
 }
  
