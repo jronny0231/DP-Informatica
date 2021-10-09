@@ -22,3 +22,5 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 })->name('dashboard');
 
 Route::get('/inicio', 'App\Http\Controllers\InicioController@index');
+
+Route::resource('/pacientes', 'App\Http\Controllers\PacienteController');
